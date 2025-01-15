@@ -19,3 +19,22 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@keyframes fadeInOutFirst {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+@keyframes fadeInOutSecond {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+.animate-fade-in-out-first {
+  animation: fadeInOutFirst 6s infinite;
+}
+
+.animate-fade-in-out-second {
+  animation: fadeInOutSecond 6s infinite;
+  animation-delay: 3s; /* Delay for the second text */
+}

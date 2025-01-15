@@ -1,114 +1,263 @@
 import Image from "next/image";
-import { Geist, Geist_Mono } from "next/font/google";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import Link from "next/link";
+import { useState, useEffect } from "react";
+import { useSpring, animated } from "react-spring";
 
 export default function Home() {
-  return (
-    <div
-      className={`${geistSans.variable} ${geistMono.variable} grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]`}
-    >
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              pages/index.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+  // Scroll animation for the middle image
+  const [scrollY, setScrollY] = useState(0);
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const bounceAnimation = useSpring({
+    transform: `translateY(${scrollY * 0.1}px)`, // Bounce effect
+    config: { tension: 200, friction: 10 },
+  });
+
+  return (
+    <div className="relative overflow-hidden">
+      {/* Video Background Section */}
+      <section className="bg-green-900 relative h-screen w-full flex items-center justify-center overflow-hidden z-10">
+        <video
+          className="absolute inset-0 object-cover w-full h-[90vh]"
+          src="/videos/vidddd.mp4"
+          autoPlay
+          loop
+          muted
+        ></video>
+
+        {/* Black Overlay */}
+        <div className="absolute inset-0 bg-black opacity-50"></div>
+
+        {/* Text Content */}
+        <div className="absolute left-4 top-1/3 z-20 text-white space-y-8">
+          <div className="text-8xl font-extrabold tracking-wide animate-pulse">
+            <p className="block">VEKANN | FITNESS | CENTRE</p>
+          </div>
+
+          <div className="text-3xl font-semibold relative">
+            <p className="animate-fade-in-out-first absolute">"No Pain No Gain" - Coach Chris</p>
+            <p className="animate-fade-in-out-second absolute">"Ukasadikitira Hauseve" - Simba Monya</p>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+
+        {/* White Box with Space from Right Edge */}
+        <div className="absolute bottom-0 right-10 bg-white w-[40vw] h-[95vh] z-30 transform translate-y-1/2 p-8">
+          <h2 className="text-3xl font-extrabold text-green-900 text-center mb-6">WHAT WE OFFER</h2>
+          <div className="grid grid-cols-2 gap-x-6">
+            <div className="space-y-6">
+              <div className="flex items-center gap-4">
+                <Image
+                  src="/boxing-glove.png"
+                  alt="Boxing"
+                  width={30}
+                  height={30}
+                />
+                <Link
+                  href="/ProgramPage"
+                  className="text-lg text-green-900 font-semibold hover:text-yellow-600 transition-colors duration-300"
+                >
+                  Boxing
+                </Link>
+              </div>
+              <div className="flex items-center gap-4">
+                <Image
+                  src="/weightlifting.png"
+                  alt="Weightlifting"
+                  width={30}
+                  height={30}
+                />
+                <Link
+                  href="/ProgramPage"
+                  className="text-lg text-green-900 font-semibold hover:text-yellow-600 transition-colors duration-300"
+                >
+                  Weightlifting
+                </Link>
+              </div>
+              <div className="flex items-center gap-4">
+                <Image
+                  src="/battle-rope.png"
+                  alt="Turf and Tread"
+                  width={30}
+                  height={30}
+                />
+                <Link
+                  href="/ProgramPage"
+                  className="text-lg text-green-900 font-semibold hover:text-yellow-600 transition-colors duration-300"
+                >
+                  Turf and Tread
+                </Link>
+              </div>
+            </div>
+
+            <div className="space-y-6">
+              <div className="flex items-center gap-4">
+                <Image
+                  src="/cardio.png"
+                  alt="Cardio"
+                  width={30}
+                  height={30}
+                />
+                <Link
+                  href="/ProgramPage"
+                  className="text-lg text-green-900 font-semibold hover:text-yellow-600 transition-colors duration-300"
+                >
+                  Cardio
+                </Link>
+              </div>
+              <div className="flex items-center gap-4">
+                <Image
+                  src="/judo.png"
+                  alt="Karate"
+                  width={30}
+                  height={30}
+                />
+                <Link
+                  href="/ProgramPage"
+                  className="text-lg text-green-900 font-semibold hover:text-yellow-600 transition-colors duration-300"
+                >
+                  Karate
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          <Link href="/ProgramPage">
+            <button className="mt-8 px-6 py-3 bg-green-900 text-yellow-600 font-semibold text-sm border-2 border-yellow-600 rounded-sm hover:bg-yellow-600 hover:text-green-900 hover:border-green-900 transition-all duration-300">
+              Learn More
+            </button>
+          </Link>
+        </div>
+      </section>
+
+      {/* New Heading Below Section */}
+      <section className="bg-green-950">
+        <div className="text-white text-center py-8">
+          <h3 className="text-4xl font-extrabold">JOIN OUR GYM</h3>
+          <p className="text-lg font-extralight mt-4 px-8">
+            Vekann Fitness Centre – located in the heart of Mabvazuva Estate, Ruwa – is quickly becoming the go-to fitness destination in the area. A dynamic space for everyone, from beginners to seasoned athletes. It's a place where you don't just work out – you push your limits, and you grow. At Vekann Fitness Centre, we’re not just a gym, we’re a community committed to helping each other reach new heights.
+          </p>
+        </div>
+      </section>
+
+      {/* Image Gallery Section */}
+      <section className="bg-green-950 py-8 px-4">
+        <div className="grid grid-cols-12 gap-4">
+          {/* First Image */}
+          <div className="col-span-4">
+            <Image
+              src="/pic1.jpg"
+              alt="Fitness Image 1"
+              width={600}
+              height={400}
+              className="w-full h-auto object-cover transition-all transform hover:scale-105 hover:brightness-90"
+            />
+          </div>
+
+          {/* Middle Image with Bounce Animation */}
+          <div className="col-span-4 relative">
+            <animated.div
+              style={bounceAnimation}
+              className="w-full h-full"
+            >
+              <Image
+                src="/pic2.jpg"
+                alt="Fitness Image 2"
+                width={600}
+                height={400}
+                className="w-full h-auto object-cover transition-all transform hover:scale-105 hover:brightness-90"
+              />
+            </animated.div>
+          </div>
+
+          {/* Last Two Images */}
+          <div className="col-span-4 flex flex-col gap-4">
+            <Image
+              src="/pic3.jpg"
+              alt="Fitness Image 3"
+              width={600}
+              height={400}
+              className="w-full h-auto object-cover transition-all transform hover:scale-105 hover:brightness-90"
+            />
+            <Image
+              src="/pic4.jpg"
+              alt="Fitness Image 4"
+              width={600}
+              height={400}
+              className="w-full h-auto object-cover transition-all transform hover:scale-105 hover:brightness-90"
+            />
+          </div>
+        </div>
+      </section>
+
+   {/* Schedule a Visit Section */}
+      <section
+        className="relative py-8 px-4"
+        style={{
+          backgroundImage: "url('/pic3.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="absolute inset-0 bg-white bg-opacity-90"></div>
+        <div className="max-w-xl mx-auto text-center relative z-10">
+          <h2 className=" text-4xl font-extrabold text-green-900 mb-6">SCHEDULE A VISIT</h2>
+          <p className="text-lg font-extralight mb-6">
+            Interested in joining Vekann Fitness Centre? Fill out the form below to schedule a visit and get started on your fitness journey!
+          </p>
+
+          <form className="space-y-4">
+            <div className="grid grid-cols-2 gap-4">
+              <div>
+                <input
+                  type="text"
+                  placeholder="First Name"
+                  className="w-full p-3 border-2 border-green-900 focus:outline-none focus:border-yellow-600"
+                />
+              </div>
+              <div>
+                <input
+                  type="text"
+                  placeholder="Surname"
+                  className="w-full p-3 border-2 border-green-900 focus:outline-none focus:border-yellow-600"
+                />
+              </div>
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              <div>
+                <input
+                  type="email"
+                  placeholder="Email Address"
+                  className="w-full p-3 border-2 border-green-900 focus:outline-none focus:border-yellow-600"
+                />
+              </div>
+              <div>
+                <input
+                  type="tel"
+                  placeholder="Phone Number"
+                  className="w-full p-3 border-2 border-green-900 focus:outline-none focus:border-yellow-600"
+                />
+              </div>
+            </div>
+            <div>
+              <button
+                type="submit"
+                className="font-semibold p-3 bg-green-900 text-yellow-600 border-2 border-yellow-600 hover:bg-yellow-600 hover:text-green-900 hover:border-green-900 transition-all duration-300"
+              >
+                SUBMIT
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
     </div>
   );
 }
