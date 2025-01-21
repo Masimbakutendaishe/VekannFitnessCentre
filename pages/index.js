@@ -27,7 +27,7 @@ export default function Home() {
       {/* Video Background Section */}
       <section className="bg-green-900 relative h-screen w-full flex items-center justify-center overflow-hidden z-10">
         <video
-          className="absolute inset-0 object-cover w-full h-[90vh]"
+          className="absolute inset-0 object-cover w-full  h-[90vh]"
           src="/videos/vidddd.mp4"
           autoPlay
           loop
@@ -39,19 +39,19 @@ export default function Home() {
 
         {/* Text Content */}
         <div className="absolute left-4 top-1/3 z-20 text-white space-y-8">
-          <div className="text-8xl font-extrabold tracking-wide animate-pulse">
+          <div className="text-4xl sm:text-8xl font-extrabold tracking-wide animate-pulse">
             <p className="block">VEKANN | FITNESS | CENTRE</p>
           </div>
 
-          <div className="text-3xl font-semibold relative">
+          <div className="text-2xl sm:text-3xl font-semibold relative">
             <p className="animate-fade-in-out-first absolute">"No Pain No Gain" - Coach Chris</p>
-            <p className="animate-fade-in-out-second absolute">"Ukasadikitira Hauseve" - Simba Monya</p>
+            <p className="animate-fade-in-out-second absolute">"Ukasadikitira Hauseve" - Simba</p>
           </div>
         </div>
 
         {/* White Box with Space from Right Edge */}
-        <div className="absolute bottom-0 right-10 bg-white w-[40vw] h-[95vh] z-30 transform translate-y-1/2 p-8">
-          <h2 className="text-3xl font-extrabold text-green-900 text-center mb-6">WHAT WE OFFER</h2>
+        <div className="absolute bottom-0 right-0 sm:right-10 bg-white w-full sm:w-[40vw] h-[95vh] z-30 transform translate-y-1/2 p-8">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-green-900 text-center mb-6">WHAT WE OFFER</h2>
           <div className="grid grid-cols-2 gap-x-6">
             <div className="space-y-6">
               <div className="flex items-center gap-4">
@@ -131,7 +131,7 @@ export default function Home() {
           </div>
 
           <Link href="/ProgramPage">
-            <button className="mt-8 px-6 py-3 bg-green-900 text-yellow-600 font-semibold text-sm border-2 border-yellow-600 rounded-sm hover:bg-yellow-600 hover:text-green-900 hover:border-green-900 transition-all duration-300">
+            <button className="justify-center items-center mt-8 px-6 py-3 bg-green-900 text-yellow-600 font-semibold text-sm border-2 border-yellow-600 rounded-sm hover:bg-yellow-600 hover:text-green-900 hover:border-green-900 transition-all duration-300">
               Learn More
             </button>
           </Link>
@@ -141,8 +141,8 @@ export default function Home() {
       {/* New Heading Below Section */}
       <section className="bg-green-950">
         <div className="text-white text-center py-8">
-          <h3 className="text-4xl font-extrabold">JOIN OUR GYM</h3>
-          <p className="text-lg font-extralight mt-4 px-8">
+          <h3 className="text-2xl sm:text-4xl font-extrabold">JOIN OUR GYM</h3>
+          <p className="text-sm sm:text-lg font-extralight mt-4 px-8">
             Vekann Fitness Centre – located in the heart of Mabvazuva Estate, Ruwa – is quickly becoming the go-to fitness destination in the area. A dynamic space for everyone, from beginners to seasoned athletes. It's a place where you don't just work out – you push your limits, and you grow. At Vekann Fitness Centre, we’re not just a gym, we’re a community committed to helping each other reach new heights.
           </p>
         </div>
@@ -152,7 +152,7 @@ export default function Home() {
       <section className="bg-green-950 py-8 px-4">
         <div className="grid grid-cols-12 gap-4">
           {/* First Image */}
-          <div className="col-span-4">
+          <div className="col-span-12 sm:col-span-4">
             <Image
               src="/pic1.jpg"
               alt="Fitness Image 1"
@@ -163,7 +163,7 @@ export default function Home() {
           </div>
 
           {/* Middle Image with Bounce Animation */}
-          <div className="col-span-4 relative">
+          <div className="col-span-12 sm:col-span-4 relative">
             <animated.div
               style={bounceAnimation}
               className="w-full h-full"
@@ -179,7 +179,7 @@ export default function Home() {
           </div>
 
           {/* Last Two Images */}
-          <div className="col-span-4 flex flex-col gap-4">
+          <div className="col-span-12 sm:col-span-4 flex flex-col gap-4">
             <Image
               src="/pic3.jpg"
               alt="Fitness Image 3"
@@ -198,7 +198,7 @@ export default function Home() {
         </div>
       </section>
 
-   {/* Schedule a Visit Section */}
+      {/* Schedule a Visit Section */}
       <section
         className="relative py-8 px-4"
         style={{
@@ -209,8 +209,8 @@ export default function Home() {
       >
         <div className="absolute inset-0 bg-white bg-opacity-90"></div>
         <div className="max-w-xl mx-auto text-center relative z-10">
-          <h2 className=" text-4xl font-extrabold text-green-900 mb-6">SCHEDULE A VISIT</h2>
-          <p className="text-lg font-extralight mb-6">
+          <h2 className="text-2xl sm:text-4xl font-extrabold text-green-900 mb-6">SCHEDULE A VISIT</h2>
+          <p className="text-sm sm:text-lg font-extralight mb-6">
             Interested in joining Vekann Fitness Centre? Fill out the form below to schedule a visit and get started on your fitness journey!
           </p>
 
