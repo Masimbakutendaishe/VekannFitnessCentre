@@ -26,16 +26,15 @@ export default function Home() {
     <div className="relative overflow-hidden">
       {/* Video Background Section */}
       <section className="bg-green-900 relative h-screen w-full flex items-center justify-center overflow-hidden z-10">
-          <video
-            className="absolute inset-0 object-cover w-full h-[90vh]"
-            src="/videos/vidddd.mp4"
-            autoPlay
-            loop
-            muted
-            playsInline
-            poster="/pic3.jpg"
-          ></video>
-
+        <video
+          className="absolute inset-0 object-cover w-full h-[90vh]"
+          src="/videos/vidddd.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+          poster="/pic3.jpg"
+        ></video>
 
         {/* Black Overlay */}
         <div className="absolute inset-0 bg-black opacity-50"></div>
@@ -161,7 +160,7 @@ export default function Home() {
               alt="Fitness Image 1"
               width={600}
               height={400}
-              className="w-full h-auto object-cover transition-all transform hover:scale-105 hover:brightness-90"
+              className="w-full h-auto object-cover transition-all transform hover:scale-105 hover:brightness-90 animate-pulse" // Added pulsing effect
             />
           </div>
 
