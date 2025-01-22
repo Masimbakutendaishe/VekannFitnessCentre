@@ -160,7 +160,7 @@ export default function Home() {
               alt="Fitness Image 1"
               width={600}
               height={400}
-              className="w-full h-auto object-cover transition-all transform hover:scale-105 hover:brightness-90 animate-pulse" // Added pulsing effect
+              className="w-full h-auto object-cover transition-all transform hover:scale-105 hover:brightness-90" // Added pulsing effect
             />
           </div>
 
