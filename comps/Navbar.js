@@ -64,7 +64,7 @@ const Navbar = () => {
           )}
           {/* Join Now Button in Dropdown */}
           <li className="mt-4 md:hidden">
-            <button className="absolute top-full z-10 px-6 py-3 bg-green-900 text-yellow-600 font-semibold text-sm border-2 border-yellow-600 rounded-sm hover:bg-yellow-600 hover:text-green-900 hover:border-green-900 transition-all duration-300">
+            <button className="px-6 py-3 bg-green-900 text-yellow-600 font-semibold text-sm border-2 border-yellow-600 rounded-sm hover:bg-yellow-600 hover:text-green-900 hover:border-green-900 transition-all duration-300">
               JOIN NOW
             </button>
           </li>
