@@ -48,6 +48,7 @@ export default function Home() {
           <div className="text-2xl sm:text-3xl font-semibold relative">
             <p className="animate-fade-in-out-first absolute">"No Pain No Gain" - Coach Chris</p>
             <p className="animate-fade-in-out-second absolute">"Ukasadikitira Hauseve" - Simba</p>
+           <p className="animate-fade-in-out-second absolute">"Ukasadikitira Haur" - Simba</p>
           </div>
         </div>
 
