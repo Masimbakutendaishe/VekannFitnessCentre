@@ -33,7 +33,7 @@ export default function Home() {
             loop
             muted
             playsInline
-            poster="/fallback-image.jpg"
+            poster="/pic3.jpg"
           ></video>
 
 
