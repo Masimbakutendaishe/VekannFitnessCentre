@@ -161,7 +161,7 @@ export default function Home() {
               alt="Fitness Image 1"
               width={600}
               height={400}
-              className="w-full h-auto object-cover transition-all transform hover:scale-105 hover:brightness-90" // Added pulsing effect
+              className="w-full h-auto object-cover transition-all transform hover:scale-105 hover:brightness-90 z-30 shadow-lg shadow-yellow-600" // Added pulsing effect
             />
           </div>
 
@@ -176,7 +176,7 @@ export default function Home() {
                 alt="Fitness Image 2"
                 width={600}
                 height={400}
-                className="w-full h-auto object-cover transition-all transform hover:scale-105 hover:brightness-90"
+                className="w-full h-auto object-cover transition-all transform hover:scale-105 hover:brightness-90 z-30 shadow-lg shadow-yellow-600"
               />
             </animated.div>
           </div>
@@ -188,14 +188,14 @@ export default function Home() {
               alt="Fitness Image 3"
               width={600}
               height={400}
-              className="w-full h-auto object-cover transition-all transform hover:scale-105 hover:brightness-90"
+              className="w-full h-auto object-cover transition-all transform hover:scale-105 hover:brightness-90 z-30 shadow-lg shadow-yellow-600"
             />
             <Image
               src="/pic4.jpg"
               alt="Fitness Image 4"
               width={600}
               height={400}
-              className="w-full h-auto object-cover transition-all transform hover:scale-105 hover:brightness-90"
+              className="w-full h-auto object-cover transition-all transform hover:scale-105 hover:brightness-90 z-30 shadow-lg shadow-yellow-600"
             />
           </div>
         </div>
