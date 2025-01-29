@@ -9,7 +9,7 @@ const Navbar = () => {
     <header className="sticky top-0 z-50 shadow-lg flex flex-col px-5 py-2.5 bg-white md:flex-row md:items-center md:justify-between">
       {/* Logo and Hamburger Menu */}
       <div className="flex items-center justify-between w-full md:w-auto">
-        <a className="ml-2">
+        <Link href="/" className="ml-2">
           <Image
             src="/logo.png"
             alt="Logo"
@@ -17,7 +17,7 @@ const Navbar = () => {
             width={70}
             height={80}
           />
-        </a>
+        </Link>
         {/* Hamburger Menu Icon */}
         <button
           className="md:hidden text-green-900"
@@ -47,35 +47,44 @@ const Navbar = () => {
         } mt-4 md:mt-0 md:flex md:flex-row md:gap-7`}
       >
         <ul className="flex flex-col md:flex-row md:gap-7 items-center font-bold">
-          {['PERSONAL TRAINING', 'OUR TEAM', 'SCHEDULE', 'MEMBERSHIP', 'CONTACT'].map(
-            (item, index) => (
-              <li key={index} className="relative p-2.5 group">
-                <Link
-                  href="/"
-                  className="text-green-800 text-base font-light relative group-hover:text-yellow-600 transition-colors duration-300"
-                >
-                  {item}
-                  <span
-                    className="absolute left-1/2 bottom-0 w-0 h-[2px] bg-blue-900 transition-all duration-500 ease-out group-hover:w-full group-hover:left-0 group-hover:bg-yellow-600"
-                  ></span>
-                </Link>
-              </li>
-            )
-          )}
+          {/* Map through links for different pages */}
+          {[
+            { name: 'PERSONAL TRAINING', link: '/PersonalTrainingPage' },
+            { name: 'OUR TEAM', link: '/our-team' },
+            { name: 'SCHEDULE', link: '/schedule' },
+            { name: 'MEMBERSHIP', link: '/membership' },
+            { name: 'CONTACT', link: '/contact' },
+          ].map((item, index) => (
+            <li key={index} className="relative p-2.5 group">
+              <Link
+                href={item.link}
+                className="text-green-800 text-base font-light relative group-hover:text-yellow-600 transition-colors duration-300"
+              >
+                {item.name}
+                <span
+                  className="absolute left-1/2 bottom-0 w-0 h-[2px] bg-blue-900 transition-all duration-500 ease-out group-hover:w-full group-hover:left-0 group-hover:bg-yellow-600"
+                ></span>
+              </Link>
+            </li>
+          ))}
           {/* Join Now Button in Dropdown */}
           <li className="mt-4 md:hidden">
-            <button className="px-6 py-3 bg-green-900 text-yellow-600 font-semibold text-sm border-2 border-yellow-600 rounded-sm hover:bg-yellow-600 hover:text-green-900 hover:border-green-900 transition-all duration-300">
-              JOIN NOW
-            </button>
+            <Link href="/join-now">
+              <button className="px-6 py-3 bg-green-900 text-yellow-600 font-semibold text-sm border-2 border-yellow-600 rounded-sm hover:bg-yellow-600 hover:text-green-900 hover:border-green-900 transition-all duration-300">
+                JOIN NOW
+              </button>
+            </Link>
           </li>
         </ul>
       </nav>
 
       {/* Join Now Button for Larger Screens */}
       <div className="hidden md:block">
-        <button className="px-6 py-3 bg-green-900 text-yellow-600 font-semibold text-sm border-2 border-yellow-600 rounded-sm hover:bg-yellow-600 hover:text-green-900 hover:border-green-900 transition-all duration-300">
-          JOIN NOW
-        </button>
+        <Link href="/join-now">
+          <button className="px-6 py-3 bg-green-900 text-yellow-600 font-semibold text-sm border-2 border-yellow-600 rounded-sm hover:bg-yellow-600 hover:text-green-900 hover:border-green-900 transition-all duration-300">
+            JOIN NOW
+          </button>
+        </Link>
       </div>
     </header>
   );
