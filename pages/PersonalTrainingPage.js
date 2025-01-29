@@ -103,15 +103,15 @@ const PersonalTrainingPage = () => {
           <h2 className="text-center text-4xl font-bold text-green-900 mb-6 mt-10">Train Like a Pro</h2>
           <ul className="mt-8 ml-10 space-y-4 text-lg text-gray-800">
             <li className="flex items-center">
-              /*<FontAwesomeIcon icon={faCheckCircle} className="mr-4 text-green-900" size="lg" />*/
+             
               You meet up with the trainer.
             </li>
             <li className="flex items-center">
-              /*<FontAwesomeIcon icon={faCheckCircle} className="mr-4 text-green-900" size="lg" />*/
+         
               We design your program.
             </li>
             <li className="flex items-center">
-              /*<FontAwesomeIcon icon={faCheckCircle} className="mr-4 text-green-900" size="lg" />*/
+         
               You unleash your potential.
             </li>
           </ul>
