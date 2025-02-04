@@ -10,7 +10,7 @@ const SchedulePage = () => {
       {/* Background Section */}
       <section className="hidden sm:block m-0 p-0 bg-white relative h-[70vh] w-full flex items-center justify-center overflow-hidden z-10 shadow-white">
         <Image
-          src="/pic11.jpg"
+          src="/pic11.JPG"
           alt="Personal Training"
           layout="responsive"
           width={1920}
