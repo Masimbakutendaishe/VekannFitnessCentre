@@ -44,15 +44,15 @@ const Navbar = () => {
       <nav
         className={`${
           menuOpen ? 'block' : 'hidden'
-        } mt-4 md:mt-0 md:flex md:flex-row md:gap-7`}
+        } mt-4 md:mt-0 md:flex md:flex-row md:gap-7 md:static `}
       >
         <ul className="flex flex-col md:flex-row md:gap-7 items-center font-bold">
           {/* Map through links for different pages */}
           {[
             { name: 'PERSONAL TRAINING', link: '/PersonalTrainingPage' },
-            { name: 'OUR TEAM', link: '/our-team' },
-            { name: 'SCHEDULE', link: '/schedule' },
-            { name: 'MEMBERSHIP', link: '/membership' },
+            { name: 'OUR TEAM', link: '/OurTeamPage' },
+            { name: 'SCHEDULE', link: '/Schedule' },
+            { name: 'MEMBERSHIP', link: '/MembershipPage' },
             { name: 'CONTACT', link: '/contact' },
           ].map((item, index) => (
             <li key={index} className="relative p-2.5 group">
