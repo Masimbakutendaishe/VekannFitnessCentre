@@ -41,7 +41,7 @@ const OurTeamPage = () => {
 
  {/* Small Screen Section */}
 <section className="sm:hidden  ">
-<div className="relative h-48 w-full bg-cover bg-center" style={{ backgroundImage: "url('/pic7.jpg')" }}>
+<div className="relative h-48 w-full bg-cover bg-center" style={{ backgroundImage: "url('/pic72.jpg')" }}>
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <h1 className="relative text-left text-white text-5xl font-bold z-10 py-16 opacity-90 ">MEET CHRIS360</h1>
       </div>
