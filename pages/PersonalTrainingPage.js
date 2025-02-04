@@ -62,7 +62,7 @@ const PersonalTrainingPage = () => {
           <div className="w-full sm:w-1/2 mb-4 sm:mb-0 sm:mr-4">
             <Image
               className="shadow-lg shadow-yellow-600"
-              src="/pic9.jpg"
+              src="/pic9.JPG"
               alt="Image 1"
               layout="responsive"
               width={1920}
@@ -75,7 +75,7 @@ const PersonalTrainingPage = () => {
             <div className="h-1/2 mb-4">
               <Image
                 className="shadow-lg shadow-yellow-600"
-                src="/pic8.jpg"
+                src="/pic8.JPG"
                 alt="Image 2"
                 layout="responsive"
                 width={1920}
@@ -86,7 +86,7 @@ const PersonalTrainingPage = () => {
             <div className="h-1/2">
               <Image
                 className="shadow-lg shadow-yellow-600"
-                src="/pic14.jpg"
+                src="/pic14.JPG"
                 alt="Image 3"
                 layout="responsive"
                 width={1920}
@@ -186,7 +186,7 @@ const PersonalTrainingPage = () => {
             <div className="h-1/2 mb-4">
               <Image
                 className="shadow-lg shadow-green-900"
-                src="/pic10.jpg"
+                src="/pic10.JPG"
                 alt="Image 2"
                 layout="responsive"
                 width={1920}
@@ -197,7 +197,7 @@ const PersonalTrainingPage = () => {
             <div className="h-1/2">
               <Image
                 className="shadow-lg shadow-green-900"
-                src="/pic12.jpg"
+                src="/pic12.JPG"
                 alt="Image 3"
                 layout="responsive"
                 width={1920}
