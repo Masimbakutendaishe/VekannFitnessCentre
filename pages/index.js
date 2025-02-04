@@ -26,15 +26,16 @@ export default function Home() {
     <div className="relative overflow-hidden">
       {/* Video Background Section */}
       <section className="bg-green-900 relative h-screen w-full flex items-center justify-center overflow-hidden z-10">
-        <video
+          <video
           className="absolute inset-0 object-cover w-full h-[90vh]"
           src="/videos/vidddd.mp4"
           autoPlay
           loop
           muted
           playsInline
-          poster="/pic3.jpg"
+          poster="/fallback-image.jpg"
         ></video>
+
 
         {/* Black Overlay */}
         <div className="absolute inset-0 bg-black opacity-50"></div>
@@ -48,12 +49,11 @@ export default function Home() {
           <div className="text-2xl sm:text-3xl font-semibold relative">
             <p className="animate-fade-in-out-first absolute">"No Pain No Gain" - Coach Chris</p>
             <p className="animate-fade-in-out-second absolute">"Ukasadikitira Hauseve" - Simba</p>
-    
           </div>
         </div>
 
         {/* White Box with Space from Right Edge */}
-        <div className="absolute bottom-0 right-0 sm:right-10 bg-white w-full sm:w-[40vw] h-[95vh] z-30 transform translate-y-1/2 p-8">
+        <div className="absolute bottom-0 right-0 sm:right-10 bg-white w-full sm:w-[40vw] h-[100vh] z-30 transform translate-y-1/2 p-8">
           <h2 className="text-2xl sm:text-3xl font-extrabold text-green-900 text-center mb-6">WHAT WE OFFER</h2>
           <div className="grid grid-cols-2 gap-x-6">
             <div className="space-y-6">
@@ -130,6 +130,20 @@ export default function Home() {
                   Karate
                 </Link>
               </div>
+              <div className="flex items-center gap-4">
+                <Image
+                  src="/obesity.png"
+                  alt="Karate"
+                  width={30}
+                  height={30}
+                />
+                <Link
+                  href="/ProgramPage"
+                  className="text-lg text-green-900 font-semibold hover:text-yellow-600 transition-colors duration-300"
+                >
+                  Weightloss
+                </Link>
+              </div>
             </div>
           </div>
 
@@ -161,7 +175,7 @@ export default function Home() {
               alt="Fitness Image 1"
               width={600}
               height={400}
-              className="w-full h-auto object-cover transition-all transform hover:scale-105 hover:brightness-90 z-30 shadow-lg shadow-yellow-600" // Added pulsing effect
+              className="w-full h-auto object-cover transition-all transform hover:scale-105 hover:brightness-90 z-30 shadow-lg shadow-yellow-600"
             />
           </div>
 
