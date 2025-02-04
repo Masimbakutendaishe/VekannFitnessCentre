@@ -41,7 +41,7 @@ const SchedulePage = () => {
 
  {/* Small Screen Section */}
 <section className="sm:hidden  ">
-<div className="relative h-48 w-full bg-cover bg-center" style={{ backgroundImage: "url('/pic11.jpg')" }}>
+<div className="relative h-48 w-full bg-cover bg-center" style={{ backgroundImage: "url('/pic11.JPG')" }}>
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <h1 className="relative text-left text-white text-5xl font-bold z-10 py-16 opacity-90 ">OUR WEEKLY SCHEDULE</h1>
       </div>
