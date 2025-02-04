@@ -40,7 +40,7 @@ const PersonalTrainingPage = () => {
       </section>
 
  {/* Small Screen Section */}
-<section className="sm:hidden ">
+<section className="sm:hidden  ">
 <div className="relative h-48 w-full bg-cover bg-center" style={{ backgroundImage: "url('/pic6.jpg')" }}>
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <h1 className="relative text-left text-white text-5xl font-bold z-10 py-16 opacity-90 ">PERSONAL TRAINING</h1>
@@ -62,7 +62,7 @@ const PersonalTrainingPage = () => {
           <div className="w-full sm:w-1/2 mb-4 sm:mb-0 sm:mr-4">
             <Image
               className="shadow-lg shadow-yellow-600"
-              src="/pic9.JPG"
+              src="/pic9.jpg"
               alt="Image 1"
               layout="responsive"
               width={1920}
@@ -75,7 +75,7 @@ const PersonalTrainingPage = () => {
             <div className="h-1/2 mb-4">
               <Image
                 className="shadow-lg shadow-yellow-600"
-                src="/pic8.JPG"
+                src="/pic8.jpg"
                 alt="Image 2"
                 layout="responsive"
                 width={1920}
@@ -86,7 +86,7 @@ const PersonalTrainingPage = () => {
             <div className="h-1/2">
               <Image
                 className="shadow-lg shadow-yellow-600"
-                src="/pic14.JPG"
+                src="/pic14.jpg"
                 alt="Image 3"
                 layout="responsive"
                 width={1920}
@@ -186,7 +186,7 @@ const PersonalTrainingPage = () => {
             <div className="h-1/2 mb-4">
               <Image
                 className="shadow-lg shadow-green-900"
-                src="/pic10.JPG"
+                src="/pic10.jpg"
                 alt="Image 2"
                 layout="responsive"
                 width={1920}
@@ -197,7 +197,7 @@ const PersonalTrainingPage = () => {
             <div className="h-1/2">
               <Image
                 className="shadow-lg shadow-green-900"
-                src="/pic12.JPG"
+                src="/pic12.jpg"
                 alt="Image 3"
                 layout="responsive"
                 width={1920}
@@ -223,7 +223,7 @@ const PersonalTrainingPage = () => {
         <div className="max-w-xl mx-auto text-center relative z-10">
           <h2 className="text-2xl sm:text-4xl font-extrabold text-green-900 mb-6">SEND US A MESSAGE</h2>
           <p className="text-sm sm:text-lg font-extralight mb-6">
-            Have a Query? Eager to Start Your Ftnes Journey? Fill out the form below to schedule a visit and get started on your fitness journey!
+            Have a Query? Eager to Start Your Fitness Journey? Fill out the form below to schedule a visit and get started on your fitness journey!
           </p>
 
           <form className="space-y-4">
@@ -275,4 +275,3 @@ const PersonalTrainingPage = () => {
 };
 
 export default PersonalTrainingPage;
-
