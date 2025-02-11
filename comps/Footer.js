@@ -50,6 +50,9 @@ const Footer = () => {
                     <a href="mailto:info@vekannfitness.com">
                         <Image src="/gmailicon.png" alt="Gmail" width={24} height={24} />
                     </a>
+                    <a href="mailto:info@vekannfitness.com">
+                        <Image src="/whatsapp.png" alt="Gmail" width={40} height={40} />
+                    </a>
                     <a href="tel:+263772716084">
                         <Image src="/phone.png" alt="Contact Number" width={24} height={24} />
                     </a>
