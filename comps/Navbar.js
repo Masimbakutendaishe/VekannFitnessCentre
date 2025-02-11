@@ -53,7 +53,7 @@ const Navbar = () => {
             { name: 'OUR TEAM', link: '/OurTeamPage' },
             { name: 'SCHEDULE', link: '/Schedule' },
             { name: 'MEMBERSHIP', link: '/MembershipPage' },
-            { name: 'CONTACT', link: '/contact' },
+            { name: 'CONTACT', link: '/ContactPage' },
           ].map((item, index) => (
             <li key={index} className="relative p-2.5 group">
               <Link
