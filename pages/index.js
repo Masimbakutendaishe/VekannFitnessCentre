@@ -65,7 +65,7 @@ export default function Home() {
                   height={30}
                 />
                 <Link
-                  href="/ProgramPage"
+                  href="/BoxingPage"
                   className="text-lg text-green-900 font-semibold hover:text-yellow-600 transition-colors duration-300"
                 >
                   Boxing
@@ -79,7 +79,7 @@ export default function Home() {
                   height={30}
                 />
                 <Link
-                  href="/ProgramPage"
+                  href="/WeightliftingPage"
                   className="text-lg text-green-900 font-semibold hover:text-yellow-600 transition-colors duration-300"
                 >
                   Weightlifting
@@ -93,7 +93,7 @@ export default function Home() {
                   height={30}
                 />
                 <Link
-                  href="/ProgramPage"
+                  href="/TurfAndTreadPage"
                   className="text-lg text-green-900 font-semibold hover:text-yellow-600 transition-colors duration-300"
                 >
                   Turf and Tread
@@ -110,7 +110,7 @@ export default function Home() {
                   height={30}
                 />
                 <Link
-                  href="/ProgramPage"
+                  href="/CardioPage"
                   className="text-lg text-green-900 font-semibold hover:text-yellow-600 transition-colors duration-300"
                 >
                   Cardio
@@ -124,7 +124,7 @@ export default function Home() {
                   height={30}
                 />
                 <Link
-                  href="/ProgramPage"
+                  href="/KaratePage"
                   className="text-lg text-green-900 font-semibold hover:text-yellow-600 transition-colors duration-300"
                 >
                   Karate
@@ -138,7 +138,7 @@ export default function Home() {
                   height={30}
                 />
                 <Link
-                  href="/ProgramPage"
+                  href="/WeightlossPage"
                   className="text-lg text-green-900 font-semibold hover:text-yellow-600 transition-colors duration-300"
                 >
                   Weightloss
