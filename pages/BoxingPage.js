@@ -30,7 +30,7 @@ const BoxingPage = () => {
         .animate-marquee-text {
           display: inline-block;
           white-space: nowrap;
-          animation: marquee 15s linear infinite;
+          animation: marquee 10s linear infinite;
         }
       `}</style>
 
