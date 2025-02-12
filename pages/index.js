@@ -26,15 +26,18 @@ export default function Home() {
     <div className="relative overflow-hidden">
       {/* Video Background Section */}
       <section className="bg-green-900 relative h-screen w-full flex items-center justify-center overflow-hidden z-10">
-          <video
-          className="absolute inset-0 object-cover w-full h-[90vh]"
-          src="/videos/vidddd.mp4"
-          autoPlay
-          loop
-          muted
-          playsInline
-          poster="/fallback-image.jpg"
-        ></video>
+      <video
+        className="absolute inset-0 object-cover w-full h-[90vh]"
+        src="/videos/vidddd.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+        webkit-playsinline
+        controlsList="nodownload nofullscreen noremoteplayback"
+        disablePictureInPicture
+        poster="/fallback-image.jpg"
+      ></video>
 
 
         {/* Black Overlay */}
