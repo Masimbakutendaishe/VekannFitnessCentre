@@ -44,7 +44,7 @@ const TurfAndTreadPage = () => {
         </p>
         <div className="relative w-full h-64 sm:h-96 mt-6">
           <Image
-            src="/pic13.JPG"
+            src="/turftread.JPG"
             alt="Gym Training"
             layout="fill"
             objectFit="cover"
