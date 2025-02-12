@@ -5,12 +5,12 @@ import React from "react";
 const WeightlossPage = () => {
 
     const weightLossMethods = [
-        { src: "/diet1.jpg", name: "Healthy Eating" },
-        { src: "/exercise1.jpg", name: "Cardio Workouts" },
-        { src: "/diet2.jpg", name: "Calorie Control" },
-        { src: "/exercise2.jpg", name: "Strength Training" },
-        { src: "/diet3.jpg", name: "Balanced Diet" },
-        { src: "/exercise3.jpg", name: "HIIT Training" },
+        { src: "/pic1.jpg", name: "Healthy Eating" },
+        { src: "/pic2.jpg", name: "Cardio Workouts" },
+        { src: "/pic3.jpg", name: "Calorie Control" },
+        { src: "/pic4.jpg", name: "Strength Training" },
+        { src: "/pic5.jpg", name: "Balanced Diet" },
+        { src: "/pic6.jpg", name: "HIIT Training" },
     ];
 
   return (
