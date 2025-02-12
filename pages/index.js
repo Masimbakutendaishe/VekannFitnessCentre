@@ -182,7 +182,7 @@ export default function Home() {
           {/* Middle Image with Bounce Animation */}
           <div className="col-span-12 sm:col-span-4 relative">
             <animated.div
-              style={bounceAnimation}
+             
               className="w-full h-full"
             >
               <Image
