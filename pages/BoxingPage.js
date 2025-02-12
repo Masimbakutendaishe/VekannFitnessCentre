@@ -18,7 +18,7 @@ const BoxingPage = () => {
    {/* Animated Header */}
    <div className="relative w-full overflow-hidden bg-[#052E16] text-white py-4">
         <div className="whitespace-nowrap text-4xl font-extrabold animate-marquee">
-          <span className="inline-block animate-marquee-text">BOXING &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; BOXING &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; BOXING &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>
+          <span className="inline-block animate-marquee-text">BOXING &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; BOXING &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; BOXING</span>
         </div>
       </div>
 
