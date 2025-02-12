@@ -44,7 +44,7 @@ const KaratePage = () => {
         </p>
         <div className="relative w-full h-64 sm:h-96 mt-6">
           <Image
-            src="/karate.jpg"
+            src="/karate.JPG"
             alt="Karate Training"
             layout="fill"
             objectFit="cover"
