@@ -53,7 +53,7 @@ export default function Home() {
         </div>
 
         {/* White Box with Space from Right Edge */}
-        <div className="absolute bottom-0 right-0 sm:right-10 bg-white w-full sm:w-[40vw] h-[100vh] z-30 transform translate-y-1/2 p-8">
+        <div className="absolute bottom-0 right-0 sm:right-10 bg-white w-full sm:w-[40vw] h-[100vh] z-30 transform sm:translate-y-1/2 translate-y-[55%]  p-8">
           <h2 className="text-2xl sm:text-3xl font-extrabold text-green-900 text-center mb-6">WHAT WE OFFER</h2>
           <div className="grid grid-cols-2 gap-x-6">
             <div className="space-y-6">
