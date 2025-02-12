@@ -44,7 +44,7 @@ const WeightliftingPage = () => {
         </p>
         <div className="relative w-full h-64 sm:h-96 mt-6">
           <Image
-            src="/pic1.jpg"
+            src="/weightlifter.jpg"
             alt="Weightlifting"
             layout="fill"
             objectFit="cover"
