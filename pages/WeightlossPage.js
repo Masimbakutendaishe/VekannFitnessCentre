@@ -44,7 +44,7 @@ const WeightlossPage = () => {
         </p>
         <div className="relative w-full h-64 sm:h-96 mt-6">
           <Image
-            src="/diet1.jpg"
+            src="/weightloss.JPG"
             alt="Weight Loss"
             layout="fill"
             objectFit="cover"
