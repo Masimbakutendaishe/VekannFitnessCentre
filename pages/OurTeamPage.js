@@ -62,7 +62,7 @@ const OurTeamPage = () => {
         {/* Image Container with Effects */}
         <div className="relative group w-64 sm:w-80 h-64 sm:h-80 shadow-lg shadow-green-900 group-hover:shadow-yellow-600 rounded-lg overflow-hidden transition-all duration-500">
           <Image
-            src="/pic1.jpg" // Replace with actual image path
+            src="/chris360.jpg" // Replace with actual image path
             alt="Instructor Image"
             layout="fill"
             objectFit="cover"
