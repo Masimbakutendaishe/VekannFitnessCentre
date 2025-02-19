@@ -108,7 +108,7 @@ const MembershipPage = () => {
 
          {/* Small Screen Section */}
 <section className="sm:hidden  ">
-<div className="relative h-48 w-full bg-cover bg-center" style={{ backgroundImage: "url('/pic9.jpg')" }}>
+<div className="relative h-48 w-full bg-cover bg-center" style={{ backgroundImage: "url('/pic9.JPG')" }}>
         <div className="absolute inset-0 bg-black opacity-50"></div>
 
       </div>
@@ -174,7 +174,7 @@ const MembershipPage = () => {
   <div className="w-1/2 h-full relative">
     <Image
       className="object-cover"
-      src="/pic9.jpg"
+      src="/pic9.JPG"
       alt="Gym Image"
       layout="intrinsic"
       width={960} // Half of 1920px screen width
