@@ -304,7 +304,7 @@ const MembershipPage = () => {
       <h3 className="text-lg font-semibold text-green-900 mb-4">The VEKANN FITNESS CENTRE Team welcomes you:</h3>
       <p className="text-sm text-green-900 mb-4">Please feel free to approach any member of the team at any time to ask for advice, criticize, complain, praise, etc. We are here to ensure your exercising is done in a pleasant and safe atmosphere. Many thanks, VEKANN FITNESS CENTRE Management.</p>
 
-            <button type="submit" onClick={generateAndUploadPDF} className="mt-4 p-3 bg-green-900 text-yellow-600 border-2 border-yellow-600 hover:bg-yellow-600 hover:text-green-900 transition-all duration-300">
+            <button type="submit" className="mt-4 p-3 bg-green-900 text-yellow-600 border-2 border-yellow-600 hover:bg-yellow-600 hover:text-green-900 transition-all duration-300">
               Submit Application
             </button>
           </form>
