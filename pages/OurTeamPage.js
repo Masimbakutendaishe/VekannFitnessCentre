@@ -75,6 +75,11 @@ const OurTeamPage = () => {
         <p className="text-green-900 text-sm sm:text-lg max-w-md mt-2">
           With years of experience in personal training and fitness coaching, Chris360 is dedicated to helping individuals achieve their goals through tailored training programs.
         </p>
+          <Link href="/CoachLoginPage">
+          <button className="px-6 py-3 bg-green-900 text-yellow-600 font-semibold text-sm border-2 border-yellow-600 rounded-sm hover:bg-yellow-600 hover:text-green-900 hover:border-green-900 transition-all duration-300">
+            COACH LOGIN
+          </button>
+        </Link>
       </section>
 
       {/* Schedule a Visit Section */}
