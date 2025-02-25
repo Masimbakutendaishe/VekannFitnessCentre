@@ -95,7 +95,7 @@ const MembershipPage = () => {
       async () => {
         const downloadURL = await getDownloadURL(uploadTask.snapshot.ref);
         //console.log("File available at", downloadURL);
-        alert("Form Submitted!");
+        alert("Your Application has been submitted! Let's get fit together!");
         window.location.reload();
       }
     );
@@ -207,7 +207,7 @@ const MembershipPage = () => {
             <input type="text" name="postalAddress" placeholder="Postal Address" className="p-2 border rounded w-full" onChange={handleChange}/>
             <input type="tel" name="telepone" placeholder="Telephone" className="p-2 border rounded w-full" onChange={handleChange} />
             <input type="tel" name="cell" placeholder="Cell" className="p-2 border rounded w-full" onChange={handleChange}/>
-            <input type="date" name="dateOfBirth" placeholder="Date of Birth" className="p-2 border rounded w-full" onChange={handleChange}/>
+            <p className="align-left text-sm text-green-900">Input Date Of Birth Below: </p><input type="date" name="dateOfBirth" placeholder="Date of Birth" className="p-2 border rounded w-full" onChange={handleChange}/>
             <select className="p-2 border rounded w-full">
               <option value="">Select Gender</option>
               <option value="Male">Male</option>
@@ -297,7 +297,7 @@ const MembershipPage = () => {
       {/* Initials and Signature */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
         <input type="text" name="initials" placeholder="Initials" className="p-2 border rounded w-full" />
-        <input type="date" name="date" placeholder="Date" className="p-2 border rounded w-full" />
+        <p className="align-left text-sm text-green-900">Input Today's Date Below: </p><input type="date" name="date" placeholder="Date" className="p-2 border rounded w-full" />
       </div>
 
       {/* Closing Message */}
