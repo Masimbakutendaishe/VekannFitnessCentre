@@ -5,20 +5,25 @@ import Image from 'next/image';
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
    useEffect(() => {
-   
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setMenuOpen(false);
+      }
+    };
 
     const handleScroll = () => {
       setMenuOpen(false);
     };
 
-    
+    document.addEventListener("mousedown", handleClickOutside);
     window.addEventListener("scroll", handleScroll);
 
     return () => {
-      
+      document.removeEventListener("mousedown", handleClickOutside);
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   return (
     <header className="sticky top-0 z-50 shadow-lg flex flex-col px-5 py-2.5 bg-white md:flex-row md:items-center md:justify-between">
       {/* Logo and Hamburger Menu */}
