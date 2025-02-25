@@ -187,7 +187,7 @@ const MembershipPage = () => {
         <div className="absolute inset-0 bg-white bg-opacity-90"></div>
         <div className="max-w-xl mx-auto text-center relative z-10">
           <h2 className="text-2xl sm:text-4xl font-extrabold text-green-900 mb-6">MEMBERSHIP APPLICATION FORM</h2>
-          <form  className="bg-white p-6 shadow-lg shadow-green-900 z-30  rounded-lg">
+          <form  onSubmit={(e) => { e.preventDefault(); generateAndUploadPDF(); }} className="bg-white p-6 shadow-lg shadow-green-900 z-30  rounded-lg">
             <h3 className="text-lg font-semibold text-green-900 mb-4">Select Training Options:</h3>
             <div className="flex flex-wrap gap-4 mb-4">
               {["Sauna", "Spinning", "Aerobics Classes", "Circuit", "Free Weight Training"].map(option => (
