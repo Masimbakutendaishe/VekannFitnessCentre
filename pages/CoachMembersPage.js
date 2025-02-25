@@ -23,9 +23,6 @@ const CoachMembersPage = () => {
 
   return (
     <div className="container mx-auto p-6">
-      <h1 className="text-4xl font-bold text-green-900 mb-4">
-        Welcome, 
-      </h1>
     <h1 className="text-4xl font-bold text-green-900 mb-4">
         Welcome, COACH CHRIS, to the Membership Forms Page
       </h1>
