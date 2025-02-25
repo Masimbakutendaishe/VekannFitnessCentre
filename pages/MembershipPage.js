@@ -4,7 +4,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { storage } from "../firebase";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
-import jsPDF from "jspdf";
+import {jsPDF} from "jspdf";
 
 
 
