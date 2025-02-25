@@ -94,7 +94,7 @@ const MembershipPage = () => {
       },
       async () => {
         const downloadURL = await getDownloadURL(uploadTask.snapshot.ref);
-        console.log("File available at", downloadURL);
+        //console.log("File available at", downloadURL);
         alert("Form Submitted!");
         window.location.reload();
       }
