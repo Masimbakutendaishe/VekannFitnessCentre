@@ -1,5 +1,6 @@
 import { initializeApp, getApps, getApp } from "firebase/app";
 import { getStorage } from "firebase/storage";
+import { getAuth } from "firebase/auth"; // Import Firebase Auth
 
 // Firebase configuration using environment variables
 const firebaseConfig = {
@@ -15,5 +16,6 @@ const firebaseConfig = {
 // Initialize Firebase only once
 const app = getApps().length ? getApp() : initializeApp(firebaseConfig);
 const storage = getStorage(app);
+const auth = getAuth(app); // Initialize Authentication
 
-export { app, storage };
+export { app, storage, auth }; // Export Authentication
