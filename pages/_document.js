@@ -11,6 +11,10 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
           rel="stylesheet"
         />
+        <meta
+          httpEquiv="Content-Security-Policy"
+          content="script-src 'self' 'unsafe-eval' 'unsafe-inline'; object-src 'none';"
+        />
       </Head>
       <body>
         <Main />
