@@ -10,7 +10,7 @@ const BoxingPage = () => {
         { src: "/pic3.jpg", name: "Kickboxing" },
         { src: "/pic4.jpg", name: "Muay Thai" },
         { src: "/pic5.jpg", name: "Shadow Boxing" },
-        { src: "/pic6.jpg", name: "Boxing Fitness Training" },
+        { src: "/pic6.jpg", name: "Boxing Training" },
       ];
 
   return (
