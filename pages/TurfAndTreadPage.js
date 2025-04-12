@@ -37,7 +37,7 @@ const TurfAndTreadPage = () => {
       {/* Gym Introduction */}
       <section className="text-center my-10 px-6">
         <h2 className="text-3xl sm:text-4xl font-bold text-[#052E16] mb-4">
-          TURF AND TREAD AT VEKANN FITNESS CENTRE
+          TURF AND TREAD AT THE VEKANN FITNESS CENTRE
         </h2>
         <p className="text-lg text-[#052E16] max-w-2xl mx-auto">
           Vekann Fitness Centre offers a range of fitness exercises, including turf and treadmill workouts, with expert guidance and a motivating environment to help you achieve your fitness goals.
