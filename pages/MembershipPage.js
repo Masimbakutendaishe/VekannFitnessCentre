@@ -94,7 +94,7 @@ const MembershipPage = () => {
       },
       async () => {
         const downloadURL = await getDownloadURL(uploadTask.snapshot.ref);
-        //console.log("File available at", downloadURL);
+        //console.log("The File available at", downloadURL);
         alert("Your Application has been submitted! Let's get fit together!");
         window.location.reload();
       }
