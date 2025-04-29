@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { useSpring, animated } from "react-spring";
 
 export default function Home() {
-  // Scroll animation for the middle image
+  // Scroll animation for the middle type image
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
