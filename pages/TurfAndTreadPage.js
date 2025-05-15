@@ -15,7 +15,7 @@ const TurfAndTreadPage = () => {
 
   return (
     <div className="relative overflow-hidden">
-      {/* Animated Header */}
+      {/* Animated Header Section*/}
       <div className="relative w-full overflow-hidden bg-[#052E16] text-white py-4">
         <div className="whitespace-nowrap text-4xl font-extrabold animate-marquee">
           <span className="inline-block animate-marquee-text">GYM EXERCISES &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; GYM EXERCISES &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; GYM EXERCISES &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>
