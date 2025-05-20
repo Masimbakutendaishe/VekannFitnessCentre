@@ -35,7 +35,7 @@ const CoachLoginPage = () => {
       <div className="max-w-md w-full bg-white p-8 rounded-lg shadow-lg relative z-10">
         <h2 className="text-3xl font-bold text-green-900 mb-6 text-center">Coach Login</h2>
         <p className="font-bold text-yellow-600 mb-6 text-center">
-          Welcome, Coach! Enter your details to access new Membership Application Forms.
+          Welcome, Coach Chris! Enter your details to access new Membership Application Forms.
         </p>
         {error && <p className="text-red-600 text-center mb-4">{error}</p>}
         <form onSubmit={handleLogin} className="space-y-4">
