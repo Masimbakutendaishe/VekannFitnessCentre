@@ -10,7 +10,7 @@ const KaratePage = () => {
         { src: "/pic3.jpg", name: "Kihon" },
         { src: "/pic4.jpg", name: "Self-Defense" },
         { src: "/pic5.jpg", name: "Weapons Training" },
-        { src: "/pic6.jpg", name: "Breaking Techniques" },
+        { src: "/pic6.jpg", name: "The Breaking Techniques" },
       ];
 
   return (
