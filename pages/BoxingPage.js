@@ -34,7 +34,7 @@ const BoxingPage = () => {
         }
       `}</style>
 
-      {/* Boxing Introduction */}
+      {/* The Boxing Introduction */}
       <section className="text-center my-10 px-6">
         <h2 className="text-3xl sm:text-4xl font-bold text-[#052E16] mb-4">
           BOXING AT VEKANN FITNESS CENTRE
